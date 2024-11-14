@@ -1,0 +1,56 @@
+/* Basic reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background: #141414;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+}
+
+/* Heading style */
+.secret-text {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  animation: fadeIn 3s ease-in forwards;
+  opacity: 0;
+}
+
+/* Reveal button style */
+#revealButton {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#revealButton:hover {
+  background: #ffffff;
+  color: #141414;
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
